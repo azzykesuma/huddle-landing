@@ -68,6 +68,11 @@ button {
   cursor: pointer;
 }
 
+button:hover{
+  background-color : hsl(300, 69%, 71%);
+  color : #fff;
+}
+
 .socmedContainer {
   display : flex;
   margin-block : 50px 30px;
@@ -79,7 +84,12 @@ button {
   margin-inline : 5px;
 }
 
-@media screen and (min-width : 768px ) {
+.media:hover{
+  cursor: pointer;
+  outline : 1px solid #fff;
+}
+
+@media screen and (min-width : 1200px ) {
   body {
     background-image: url('./images/bg-desktop.svg');
     background-size: cover;
@@ -98,7 +108,7 @@ button {
   .mockup {
     display : block;
     margin-block : 10px 25px;;
-    width : 370px;
+    width : 550px;
   }
   .left {
     padding-inline : 30px;
@@ -108,19 +118,21 @@ button {
   .right {
     display : block;
     margin-top : 5em;
-    align-items: center;
-    justify-content: center;
+    margin-left : -40px;
+    width : 500px;
   }
   h1,p {
     text-align : left;
   }
   h1 {
-    font-size: 17px;
+    font-size: 26px;
   }
   button {
     padding-inline : 50px;
   }
   .socmedContainer {
     justify-content: flex-end;
+    position: relative;
+    top : 6em;
   }    
 }
