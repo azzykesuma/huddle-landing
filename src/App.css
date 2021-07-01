@@ -99,11 +99,12 @@ button:hover{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding-block : 70px;
+    padding-block : 90px;
   }
   .logo {
     margin-top : -20px;
     margin-bottom: 40px;
+    width : 200px;
   }
   .mockup {
     display : block;
