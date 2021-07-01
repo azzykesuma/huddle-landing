@@ -1,38 +1,126 @@
-.App {
-  text-align: center;
+* {
+  margin : 0;
+  padding : 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Open Sans',sans-serif;
+  background-image: url('./images/bg-mobile.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: hsl(257, 40%, 49%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  display : flex;
+  flex-direction: column;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.left {
+  display : flex;
+  flex-direction: column;
+  padding-inline : 30px;
+}
+
+.right {
+  padding-inline : 35px;
+  display : flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  width : 100px;
+  margin-block : 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.mockup {
+  display : block;
+  margin-block : 10px 25px;;
+  width : 300px;
+}
+
+h1 {
+  color : #fff;
+  text-align: center;
+  font-size : 23px;
+  font-weight: 600;
+  font-family: 'Poppins';
+  margin-block : 10px;
+}
+
+p {
+  color : #fff;
+  text-align: center;
+  font-size: 15px;
+}
+
+button {
+  margin-block : 20px;
+  padding-inline : 6em;
+  padding-block : 10px;
+  border-radius : 50px;
+  border : none;
+  color : hsl(300, 69%, 71%);
+  box-shadow: 3px 4px 5px rgba(0,0,0,0.53);
+  cursor: pointer;
+}
+
+.socmedContainer {
+  display : flex;
+  margin-block : 50px 30px;
+}
+
+.media {
+  width : 20px;
+  border-radius: 50px;
+  margin-inline : 5px;
+}
+
+@media screen and (min-width : 768px ) {
+  body {
+    background-image: url('./images/bg-desktop.svg');
+    background-size: cover;
+    overflow-y: hidden;
   }
-  to {
-    transform: rotate(360deg);
+  .container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-block : 70px;
   }
+  .logo {
+    margin-top : -20px;
+    margin-bottom: 40px;
+  }
+  .mockup {
+    display : block;
+    margin-block : 10px 25px;;
+    width : 370px;
+  }
+  .left {
+    padding-inline : 30px;
+    margin-bottom: 50px;
+    width : 50%;
+  }
+  .right {
+    display : block;
+    margin-top : 5em;
+    align-items: center;
+    justify-content: center;
+  }
+  h1,p {
+    text-align : left;
+  }
+  h1 {
+    font-size: 17px;
+  }
+  button {
+    padding-inline : 50px;
+  }
+  .socmedContainer {
+    justify-content: flex-end;
+  }    
 }
